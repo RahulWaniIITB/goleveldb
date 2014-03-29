@@ -193,6 +193,7 @@ func (p *DB) findGE(key []byte, prev bool) (int, bool) {
 			h--
 		}
 	}
+	return 1, false
 }
 
 func (p *DB) findLT(key []byte) int {
